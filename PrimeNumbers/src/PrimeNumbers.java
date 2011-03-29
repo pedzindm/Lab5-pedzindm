@@ -16,4 +16,9 @@ public class PrimeNumbers {
 		
 		return ret;
 	}
+	public static ArrayList<Integer> numberGenerator(int i){
+		return null;
+		
+	}
+	
 }
