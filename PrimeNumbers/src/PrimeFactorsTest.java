@@ -50,7 +50,7 @@ public class PrimeFactorsTest {
 	}
 	@Test
 	public void testBigNumber(){
-		assertEquals(list(3,5,5,73,6373),PrimeNumbers.generatePrimes(34892175));
+		assertEquals(list(5, 7, 7, 1327),PrimeNumbers.generatePrimes(325115));
 	}
 	private ArrayList<Integer> list(int...ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
