@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrimeNumbers {
 
@@ -33,7 +34,8 @@ public class PrimeNumbers {
 			}
 			prime--;
 		}
-
+		Collections.sort(retThis);
+		
 		return retThis;
 
 	}
