@@ -16,4 +16,12 @@ public class PrimeNumbersTest {
 	public void testOne(){
 		assertEquals(new ArrayList<Integer>(),PrimeNumbers.numberGenerator(1));
 	}
+	private ArrayList<Integer> list(int...ints){
+		ArrayList<Integer> ret = new ArrayList<Integer>();
+		for(int i: ints){
+			ret.add(i);
+		}
+		
+		return ret;
+	}
 }
