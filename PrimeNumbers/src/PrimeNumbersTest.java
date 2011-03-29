@@ -32,6 +32,10 @@ public class PrimeNumbersTest {
 	public void testSix(){
 		assertEquals(list(2,3,5),PrimeNumbers.numberGenerator(6));
 	}
+	@Test 
+	public void testEight(){
+		assertEquals(list(2,3,5,7),PrimeNumbers.numberGenerator(8));
+	}
 	private ArrayList<Integer> list(int...ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i: ints){
