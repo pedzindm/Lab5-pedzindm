@@ -8,17 +8,34 @@ public class PrimeNumbers {
 
 		for (int candiate = 2; i > 1; candiate++) {
 
-			for(;i % candiate == 0;i /= candiate) {
+			for (; i % candiate == 0; i /= candiate) {
 				ret.add(candiate);
-				
+
 			}
 		}
-		
+
 		return ret;
 	}
-	public static ArrayList<Integer> numberGenerator(int i){
-		return new ArrayList<Integer>();
-		
+
+	public static ArrayList<Integer> numberGenerator(int i) {
+
+		ArrayList<Integer> retThis = new ArrayList<Integer>();
+		int prime = i;
+		prime--;
+		while (prime >= 2) {
+			ArrayList<Integer> generatePrimes = PrimeNumbers
+					.generatePrimes(prime);
+
+			Integer lowerprime = generatePrimes.remove(0);
+
+			if (!retThis.contains(lowerprime)) {
+				retThis.add(lowerprime);
+			}
+			prime--;
+		}
+
+		return retThis;
+
 	}
-	
+
 }
